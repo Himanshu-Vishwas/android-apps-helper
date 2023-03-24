@@ -2,5 +2,5 @@
 |ok|ji|bye|
 --|--|--
 |kk|ll|ldkd|
----|---|---
+--|--|--
 |klkldfk|kdshjd|hehedjdkjd|
