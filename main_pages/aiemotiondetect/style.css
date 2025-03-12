@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(45deg, blue, red);
+    height: 100vh;
+}
+
+.contains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    border-radius: 10px;
+    margin: 13% 0 3% 0 ;
+    height: 200px;
+    width: 200px;
+}
+
+h3{
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+button{
+    margin-top: 2%;
+}
+button.a{
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .contains{
+        margin: 40% auto 10% auto;
+        width: 80%;
+        align-items: center;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+        margin-bottom: 5%;
+    }
+    button{
+        margin-top: 40px;
+        width: auto;
+    }
+  }
