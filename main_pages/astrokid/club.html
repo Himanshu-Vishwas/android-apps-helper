@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrokid Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Neue', cursive;
+      background: linear-gradient(to bottom, #1e1e5e, #4b4be6);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ffea00;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input, button {
+      padding: 15px;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: none;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      background: linear-gradient(135deg, #4b4be6, #1e1e5e);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.1s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: #ccc;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Astrokid Club</h1>
+  <p>Join the Astrokid Club to get exclusive space tips, challenges, and activities!</p>
+
+  <form onsubmit="alert('Thank you for joining!'); return false;">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <button type="submit">Join Now</button>
+  </form>
+
+  <footer>
+    &copy; 2025 Astrokid. All rights reserved.
+  </footer>
+</body>
+</html>
