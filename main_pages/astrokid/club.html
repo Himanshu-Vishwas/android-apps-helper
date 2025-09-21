@@ -101,8 +101,8 @@
       // Simple spam prevention: check localStorage for previous submission timestamp
       const lastSubmission = localStorage.getItem('clubFormSubmittedAt');
       const now = Date.now();
-      if (lastSubmission && now - parseInt(lastSubmission) < 24 * 60 * 60 * 1000) {
-        alert('You have already submitted the form in the last 24 hours.');
+      if (lastSubmission && now - parseInt(lastSubmission) < 60 * 60 * 1000) {
+        alert('You have already submitted the form in the last 1 hour.');
         return;
       }
 
