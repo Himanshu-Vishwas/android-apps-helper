@@ -26,7 +26,7 @@
     }
 
     p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin: 20px 0;
       line-height: 1.6;
     }
@@ -45,6 +45,7 @@
       font-size: 1rem;
       border-radius: 10px;
       border: none;
+      outline: none;
     }
 
     input {
@@ -70,20 +71,64 @@
       color: #ccc;
       padding: 20px;
     }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 2.2rem; }
+      p { font-size: 1rem; }
+    }
   </style>
 </head>
 <body>
   <h1>Astrokid Club</h1>
   <p>Join the Astrokid Club to get exclusive space tips, challenges, and activities!</p>
 
-  <form onsubmit="alert('Thank you for joining!'); return false;">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
+  <form id="clubForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
     <button type="submit">Join Now</button>
   </form>
 
   <footer>
     &copy; 2025 Astrokid. All rights reserved.
   </footer>
+
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCWYQuQo4ZhVNl600Al5ZhjDu7Fd6gfhQg",
+      authDomain: "astrokid-mm.firebaseapp.com",
+      projectId: "astrokid-mm",
+      storageBucket: "astrokid-mm.firebasestorage.app",
+      messagingSenderId: "129364183811",
+      appId: "1:129364183811:web:72b48e04a7436065b7b736",
+      measurementId: "G-LYHXE5P9T2"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const form = document.getElementById('clubForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      try {
+        await addDoc(collection(db, 'clubMembers'), {
+          name,
+          email,
+          joinedAt: serverTimestamp()
+        });
+        alert('Thank you for joining the club!');
+        form.reset();
+      } catch (err) {
+        console.error('Error saving data:', err);
+        alert('Failed to save data. Please try again.');
+      }
+    });
+  </script>
 </body>
 </html>
