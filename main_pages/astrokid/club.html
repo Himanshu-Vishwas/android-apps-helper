@@ -40,16 +40,26 @@
       max-width: 400px;
     }
 
-    input, button {
-      padding: 15px;
+    input, select, button, label {
+      padding: 12px;
       font-size: 1rem;
       border-radius: 10px;
       border: none;
       outline: none;
     }
 
-    input {
+    input, select {
       width: 100%;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
     }
 
     button {
@@ -85,6 +95,16 @@
   <form id="clubForm">
     <input type="text" id="name" placeholder="Your Name" required>
     <input type="email" id="email" placeholder="Your Email" required>
+    <input type="text" id="profession" placeholder="Profession (optional)">
+    <input type="date" id="dob" placeholder="Date of Birth (optional)">
+    <input type="tel" id="phone" placeholder="Phone Number (optional)">
+    
+    <div class="checkbox-group">
+      <label><input type="checkbox" id="whatsappSame"> Is WhatsApp same as phone number?</label>
+      <label><input type="checkbox" id="joinGroup"> Want to join WhatsApp/Telegram group?</label>
+      <label><input type="checkbox" id="marketing"> Interested in other products/marketing updates?</label>
+    </div>
+
     <button type="submit">Join Now</button>
   </form>
 
@@ -113,15 +133,21 @@
     const form = document.getElementById('clubForm');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
+
+      const data = {
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        profession: document.getElementById('profession').value.trim() || null,
+        dob: document.getElementById('dob').value || null,
+        phone: document.getElementById('phone').value.trim() || null,
+        whatsappSame: document.getElementById('whatsappSame').checked,
+        joinGroup: document.getElementById('joinGroup').checked,
+        marketing: document.getElementById('marketing').checked,
+        joinedAt: serverTimestamp()
+      };
 
       try {
-        await addDoc(collection(db, 'clubMembers'), {
-          name,
-          email,
-          joinedAt: serverTimestamp()
-        });
+        await addDoc(collection(db, 'clubMembers'), data);
         alert('Thank you for joining the club!');
         form.reset();
       } catch (err) {
