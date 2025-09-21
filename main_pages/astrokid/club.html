@@ -19,38 +19,12 @@
       padding: 50px 20px;
     }
 
-    h1 {
-      font-size: 3rem;
-      color: #ffea00;
-      text-shadow: 2px 2px 5px #000;
-    }
+    h1 { font-size: 3rem; color: #ffea00; text-shadow: 2px 2px 5px #000; }
+    p { font-size: 1.2rem; margin: 20px 0; line-height: 1.6; }
 
-    p {
-      font-size: 1.2rem;
-      margin: 20px 0;
-      line-height: 1.6;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
-      width: 100%;
-      max-width: 400px;
-    }
-
-    input, select, button, label {
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 10px;
-      border: none;
-      outline: none;
-    }
-
-    input, select {
-      width: 100%;
-    }
+    form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; width: 100%; max-width: 400px; }
+    input, select, button, label { padding: 12px; font-size: 1rem; border-radius: 10px; border: none; outline: none; }
+    input, select { width: 100%; }
 
     .checkbox-group {
       display: flex;
@@ -70,17 +44,8 @@
       transition: transform 0.1s ease, box-shadow 0.2s ease;
     }
 
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
-    }
-
-    footer {
-      margin-top: auto;
-      font-size: 0.9rem;
-      color: #ccc;
-      padding: 20px;
-    }
+    button:hover { transform: scale(1.05); box-shadow: 0 6px 15px rgba(0,0,0,0.5); }
+    footer { margin-top: auto; font-size: 0.9rem; color: #ccc; padding: 20px; }
 
     @media (max-width: 480px) {
       h1 { font-size: 2.2rem; }
@@ -98,7 +63,7 @@
     <input type="text" id="profession" placeholder="Profession (optional)">
     <input type="date" id="dob" placeholder="Date of Birth (optional)">
     <input type="tel" id="phone" placeholder="Phone Number (optional)">
-    
+
     <div class="checkbox-group">
       <label><input type="checkbox" id="whatsappSame"> Is WhatsApp same as phone number?</label>
       <label><input type="checkbox" id="joinGroup"> Want to join WhatsApp/Telegram group?</label>
@@ -108,9 +73,7 @@
     <button type="submit">Join Now</button>
   </form>
 
-  <footer>
-    &copy; 2025 Astrokid. All rights reserved.
-  </footer>
+  <footer>&copy; 2025 Astrokid. All rights reserved.</footer>
 
   <!-- Firebase SDK -->
   <script type="module">
@@ -131,8 +94,17 @@
     const db = getFirestore(app);
 
     const form = document.getElementById('clubForm');
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      // Simple spam prevention: check localStorage for previous submission timestamp
+      const lastSubmission = localStorage.getItem('clubFormSubmittedAt');
+      const now = Date.now();
+      if (lastSubmission && now - parseInt(lastSubmission) < 24 * 60 * 60 * 1000) {
+        alert('You have already submitted the form in the last 24 hours.');
+        return;
+      }
 
       const data = {
         name: document.getElementById('name').value.trim(),
@@ -148,6 +120,7 @@
 
       try {
         await addDoc(collection(db, 'clubMembers'), data);
+        localStorage.setItem('clubFormSubmittedAt', now.toString());
         alert('Thank you for joining the club!');
         form.reset();
       } catch (err) {
