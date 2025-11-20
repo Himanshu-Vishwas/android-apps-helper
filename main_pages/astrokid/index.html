@@ -1,73 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astrokid - About</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AstroKid - About</title>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
+    :root{
+      --bg1: #07102b;
+      --bg2: #2b37d9;
+      --accent: #ffd54a;
+      --card: rgba(255,255,255,0.04);
+      --muted: #c7d0ff;
+    }
+    *{box-sizing: border-box}
+    body{
+      margin:0;
+      min-height:100vh;
       font-family: 'Comic Neue', cursive;
-      background: linear-gradient(to bottom, #1e1e5e, #4b4be6);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 50px 20px;
+      background: linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:36px 20px;
+      text-rendering:optimizeLegibility;
     }
-
-    h1 {
-      font-size: 3rem;
-      color: #ffea00;
-      text-shadow: 2px 2px 5px #000;
+    .wrap{
+      width:100%;
+      max-width:980px;
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+      border-radius:16px;
+      padding:28px;
+      box-shadow:0 12px 40px rgba(0,0,0,0.55);
+      backdrop-filter: blur(6px);
     }
-
-    p {
-      font-size: 1.3rem;
-      margin: 20px 0;
-      line-height: 1.6;
+    header{text-align:center;margin-bottom:14px}
+    h1{
+      margin:6px 0;
+      font-size:3rem;
+      color:var(--accent);
+      text-shadow:0 6px 18px rgba(0,0,0,0.6);
     }
-
-    .club-button {
-      padding: 20px 40px;
-      font-size: 1.5rem;
-      color: #fff;
-      background: linear-gradient(135deg, #4b4be6, #1e1e5e);
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-      transition: transform 0.1s ease, box-shadow 0.2s ease;
-      text-decoration: none;
+    .subtitle{color:#e9f0ff;font-size:1.05rem;margin-bottom:14px}
+    .intro{font-size:1.15rem;line-height:1.6;color:#f4f8ff;margin:12px 0 20px}
+    .columns{display:grid;grid-template-columns:1fr;gap:16px}
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:16px;
+      text-align:left;
     }
-
-    .club-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    h2{margin:0 0 8px 0;font-size:1.2rem}
+    p, li{color:#eaf1ff;font-size:1rem;line-height:1.5}
+    ul{margin:8px 0 0 20px}
+    .muted{color:var(--muted);font-size:0.95rem}
+    .cta{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      margin-top:18px;
+      flex-wrap:wrap;
     }
-
-    footer {
-      margin-top: auto;
-      font-size: 0.9rem;
-      color: #ccc;
-      padding: 20px;
+    .btn-primary{
+      background:linear-gradient(135deg,#ffd54a,#ffb400);
+      color:#07102b;
+      padding:12px 26px;
+      border-radius:26px;
+      text-decoration:none;
+      font-weight:700;
+      box-shadow:0 10px 24px rgba(0,0,0,0.45);
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
     }
+    .btn-outline{
+      padding:10px 22px;
+      border-radius:22px;
+      color:#fff;
+      text-decoration:none;
+      border:1px solid rgba(255,255,255,0.12);
+      background:transparent;
+    }
+    footer{margin-top:18px;text-align:center;color:#cfe1ff;font-size:0.92rem}
+    @media(min-width:780px){ .columns{grid-template-columns:1fr 1fr} }
   </style>
 </head>
 <body>
-  <h1>Astrokid</h1>
-  <p>
-    Astrokid is a fun, educational app for young explorers who love space! 
-    Learn about planets, stars, and the mysteries of the universe, and take fun quizzes to test your knowledge.
-  </p>
+  <main class="wrap" role="main" aria-labelledby="astrokid-title">
+    <header>
+      <h1 id="astrokid-title">AstroKid</h1>
+      <div class="subtitle">Where little explorers meet the stars</div>
+    </header>
 
-  <a href="club.html" class="club-button">Join the Astrokid Club</a>
+    <p class="intro">
+      AstroKid is a playful, kid-friendly app that makes space feel close and exciting. The first version is live on the Play Store and already lets children explore planets, take short quizzes, and try simple activities that spark curiosity. This page shares what the app is today, the community behind it, and the ideas guiding where we want to go — without promises or dates, just imagination and steady improvement.
+    </p>
 
-  <footer>
-    &copy; 2025 Astrokid. All rights reserved.
-  </footer>
+    <section class="columns" aria-label="features and club">
+      <article class="card" aria-labelledby="features-title">
+        <h2 id="features-title">What you can do in AstroKid</h2>
+        <p class="muted">Small, joyful experiences designed for young learners.</p>
+        <ul>
+          <li><strong>Explorer mode</strong> — Flip through the solar system, compare two planets, and read short, friendly facts designed for kids.</li>
+          <li><strong>Quiz mode</strong> — Play short quizzes that make remembering fun. Progress is simple and encouraging.</li>
+          <li><strong>Activities</strong> — Try the ISS tracker and explore playful prototypes like gravity demos and rocket building tools.</li>
+        </ul>
+      </article>
+
+      <article class="card" aria-labelledby="club-title">
+        <h2 id="club-title">AstroKid Astronomy Club</h2>
+        <p class="muted">A friendly club for curious kids and supportive parents.</p>
+        <p>Joining the club connects kids to light, guided activities that encourage looking up: simple sky tasks, observation prompts, and small challenges that build confidence. Club members receive themed prompts, printable activities, and gentle rewards that celebrate curiosity.</p>
+        <ul>
+          <li>Fun sky tasks like observing Moon phases or spotting bright stars.</li>
+          <li>Printable worksheets and achievement badges to keep discoveries tangible.</li>
+          <li>Guidance for parents and teachers with safe, kid-friendly community features.</li>
+        </ul>
+        <div style="margin-top:12px">
+          <a class="btn-primary" href="https://himanshu-vishwas.github.io/android-apps-helper/main_pages/astrokid/club.html" aria-label="Join the Astrokid Club">Join the AstroKid Club</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="card" aria-labelledby="vision-title" style="margin-top:16px">
+      <h2 id="vision-title">A soft, open vision</h2>
+      <p class="muted">Curiosity first — tools and stories later.</p>
+      <p>AstroKid is guided by a simple idea: make space feel wonder-filled, approachable, and playful. The project grows by adding small, well-crafted experiences — richer visuals, playful simulations, and interactive stories — whenever they naturally fit. The aim is not to rush or promise timelines, but to build features that delight kids, respect parents, and work reliably on everyday devices.</p>
+      <p>We imagine a world where a child can place a tiny planet on their desk (AR), design a pretend rocket and learn why it flies, or follow a short mission-story that teaches a single idea about space — one joyful step at a time.</p>
+    </section>
+
+    <section class="card" aria-labelledby="help-title" style="margin-top:16px">
+      <h2 id="help-title">How you can help</h2>
+      <p class="muted">Support comes in many small, meaningful ways.</p>
+      <ul>
+        <li>Try the app and share what your child loved (or didn't).</li>
+        <li>Suggest activities or simple learning ideas — many features start from user suggestions.</li>
+        <li>Share with a teacher, parent group, or a friend who has a curious kid.</li>
+      </ul>
+    </section>
+
+    <div class="cta" aria-label="actions">
+      <a class="btn-primary" href="https://himanshu-vishwas.github.io/android-apps-helper/main_pages/astrokid/club.html" aria-label="Join the AstroKid Club">Join the AstroKid Club</a>
+      <a class="btn-outline" href="https://play.google.com/store/apps/details?id=mm.marsman.astrokid" aria-label="Open Play Store listing">Open on Play Store</a>
+    </div>
+
+    <footer>
+      &copy; 2025 Astrokid. Built with curiosity and care.
+    </footer>
+  </main>
 </body>
 </html>
