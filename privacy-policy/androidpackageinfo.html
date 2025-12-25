@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Android Package Info</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6; color:#1a1a1a; padding:24px; max-width:900px; margin:0 auto; }
+    h1,h2,h3 { color:#0b5ed7; margin-top:1.2rem; }
+    p { margin:0.65rem 0; }
+    ul { margin:0.5rem 0 0.5rem 1.2rem; }
+    code { background:#f4f4f6; padding:2px 6px; border-radius:4px; font-size:0.95em; }
+    .muted { color:#666; font-size:0.95rem; }
+    .note { background:#f8f9fa; border-left:4px solid #0b5ed7; padding:12px; margin:12px 0; border-radius:6px; }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy — Android Package Info</h1>
+<p class="muted">Last updated: December 25, 2025</p>
+
+<p>This Privacy Policy explains how <strong>Android Package Info</strong> (the “App”, “we”, “us”, or “our”) collects, uses, discloses, and protects information when you install and use the App on an Android device. By using the App you agree to the collection and use of information as described in this policy.</p>
+
+<h2>What this App does</h2>
+<p>Android Package Info is a local utility that shows information about installed apps on your Android device — package name, version, APK size, install/update timestamps, permissions, and similar metadata. The App is designed to process and display this information locally on your device so you can view app details and copy or share them if you choose.</p>
+
+<h2>Information we collect and why</h2>
+
+<h3>Automatically accessed device data (local, on-device)</h3>
+<ul>
+  <li><strong>Installed apps list &amp; app metadata</strong> — package name, application label, icon, version name, version code, APK path/size, first install time, last update time, min/target SDK, and requested permissions. <em>Purpose:</em> to display details to you and provide the App’s core functionality (viewing/copying/sharing app info).</li>
+  <li><strong>No personal identifiers are collected by default</strong> — the App does not collect your name, email, phone number, contacts, GPS location, or other PII unless you explicitly choose to share such information using Android share intents.</li>
+</ul>
+
+<div class="note">
+  <strong>Important:</strong> Access to the list of installed apps requires special package-visibility permission (see the section <em>Package visibility &amp; QUERY_ALL_PACKAGES</em> below). The App uses this to show all installed apps on the device.
+</div>
+
+<h3>User-provided actions</h3>
+<ul>
+  <li><strong>Copy/Share actions:</strong> When you tap copy or share buttons inside the App, the selected text (for example package name or permissions list) is placed on the local clipboard or handed to the Android share sheet. Those actions are initiated by you and are not sent to our servers by default.</li>
+</ul>
+
+<h3>What we DO NOT do</h3>
+<ul>
+  <li>We do not collect, transmit, or store installed-app data on any server by default.</li>
+  <li>We do not collect analytics, crash reports, advertising identifiers, or other telemetry unless you explicitly enable or install a version that includes such services (not present in the current app by default).</li>
+</ul>
+
+<h2>Package visibility and QUERY_ALL_PACKAGES</h2>
+<p>To list installed apps on Android 11+ the App uses the package visibility mechanism. Historically apps could request the <code>QUERY_ALL_PACKAGES</code> permission to see all installed apps. Because Google Play restricts broad use of that permission, the App declares package visibility and documents why it needs this access.</p>
+
+<ul>
+  <li><strong>Why we need it:</strong> The App’s primary purpose is to enumerate and display installed applications and metadata on your device.</li>
+  <li><strong>Privacy impact:</strong> The App reads package identifiers (package names) and metadata locally only, and does not upload that data to any server.</li>
+  <li><strong>Play Store compliance:</strong> If you publish to Google Play and use <code>QUERY_ALL_PACKAGES</code>, you must declare the reason in the Play Console's permission declaration form and only request it for legitimate functionality. Alternatively, you can limit visibility via a <code>&lt;queries&gt;</code> block to specific packages if that suits your use case.</li>
+</ul>
+
+<h2>How we use the information</h2>
+<ul>
+  <li>Display app details in the UI.</li>
+  <li>Allow copying or sharing of app details when you request it.</li>
+  <li>Support basic features such as sorting/searching/filtering apps, and marking system apps vs user-installed apps.</li>
+</ul>
+
+<h2>Disclosure of information</h2>
+<p>We do not share or sell the installed-app list or app metadata to third parties. Disclosure may occur only in these limited cases:</p>
+<ul>
+  <li><strong>With your consent:</strong> you use the share feature or copy and paste the data into another app or service.</li>
+  <li><strong>Legal reasons:</strong> if required by law or to respond to valid legal process.</li>
+  <li><strong>Business transfers:</strong> in case of sale/merger of the App; we will notify users if data is transferred.</li>
+</ul>
+
+<h2>Data retention</h2>
+<p>The App stores app metadata only on the device and only as long as the App is installed (or until the user clears app data). The App does not retain user data on servers.</p>
+
+<h2>Security</h2>
+<p>We take reasonable steps to protect information stored locally in the App. Because the App runs on your device and reads installed app metadata, standard Android platform protections apply. You should secure your device (PIN/biometrics) to protect stored data.</p>
+
+<h2>Third-party services</h2>
+<p>The current version of the App does not integrate third-party analytics, advertising SDKs, or crash-reporting services. If third-party services are added in future releases, this Privacy Policy will be updated and the change date will be indicated above. Any third-party SDKs and their privacy terms will be listed in the App’s Play Console declaration and in the updated policy.</p>
+
+<h2>Children’s privacy</h2>
+<p>The App is not directed to children under the age of 13 (or local age of consent where applicable). We do not knowingly collect personal information from children under 13. If you believe we may have collected such information, please contact us at the address below so we can remove it.</p>
+
+<h2>Your rights &amp; choices</h2>
+<ul>
+  <li><strong>Access &amp; correction:</strong> This App shows information stored locally — you can uninstall the App or clear its data to remove any local data.</li>
+  <li><strong>Opt-out:</strong> There is nothing to opt out of on our servers because we do not transmit installed-app data. If we add remote analytics or telemetry in future, we will provide opt-out instructions.</li>
+  <li><strong>Sharing:</strong> Copy and share features are user-initiated; you control any data you choose to share.</li>
+</ul>
+
+<h2>Changes to this Privacy Policy</h2>
+<p>We may update this policy to reflect changes in our app, legal requirements, or developer practices. If we make material changes we will update the "Last updated" date above. You should periodically review this page for the latest information.</p>
+
+<h2>Contact us</h2>
+<p>If you have questions, requests, or concerns about this Privacy Policy or the App’s data practices, please contact:</p>
+<ul>
+  <li>Email: <a href="mailto:himanshuvishwas58@gmail.com">himanshuvishwas58@gmail.com</a></li>
+</ul>
+
+<hr />
+<p class="muted">Developer: Android Package Info — provides on-device app metadata. This policy describes the current app (version 1.x). For publication on Google Play, host this page on your site and add the hosted URL in Play Console’s “Privacy Policy” field.</p>
+
+</body>
+</html>
