@@ -1,0 +1,40 @@
+short: MP Land Records, Bhulekh Khasra Khatauni and Bhumi Maps Info
+
+long: 
+MP – Bhumi Info is your one-stop solution for accessing land records in Madhya Pradesh. This app helps you view Bhulekh (ROR), Khasra, Khatauni, check Dakhil Kharij status, explore Bhulekh and Bhumi maps, and access useful calculators and guidelines to simplify land-related tasks.
+ 
+Our mission is to make Madhya Pradesh's land record system more transparent, efficient, and citizen-friendly by providing easy digital access to official resources.
+ 
+Features:
+• View detailed land records (Bhulekh (ROR), Khasra, Khatauni)
+• Check Dakhil Kharij status of plots
+• Explore Bhulekh and Bhumi maps
+• Access land area and registration calculators
+• Offline support for key information
+• User-friendly interface with clear navigation
+ 
+Disclaimer:
+This app is not an official government app. It only provides information available from public government sources to make access easier for citizens. Users are advised to verify data from official sources when required.
+ 
+Official Data Sources:
+• https://mpbhulekhrecords.com
+ 
+---
+ 
+एमपी - भूमि जानकारी (MP – Bhumi Info) मध्य प्रदेश में भूमि रिकॉर्ड तक आसान पहुंच के लिए आपका संपूर्ण समाधान है। यह ऐप आपको भुलेख (ROR), खसरा, खतौनी देखने, दाखिल खारिज स्थिति जांचने, भुलेख और भूमि नक्शे एक्सप्लोर करने, और भूमि प्रबंधन को सरल बनाने के लिए कैलकुलेटर व गाइडलाइन उपलब्ध कराता है।
+ 
+हमारा उद्देश्य मध्य प्रदेश के भूमि रिकॉर्ड को डिजिटल रूप से सुलभ, पारदर्शी और नागरिकों के अनुकूल बनाना है।
+ 
+मुख्य विशेषताएँ:
+• विस्तृत भूमि रिकॉर्ड देखें (भुलेख (ROR), खसरा, खतौनी)
+• भूखंडों की दाखिल खारिज स्थिति जांचें
+• भुलेख और भूमि नक्शे एक्सप्लोर करें
+• भूमि क्षेत्र व पंजीकरण कैलकुलेटर का उपयोग करें
+• महत्वपूर्ण जानकारी ऑफ़लाइन भी उपलब्ध
+• सरल और उपयोगकर्ता-अनुकूल इंटरफ़ेस
+ 
+अस्वीकरण (Disclaimer):
+यह ऐप कोई आधिकारिक सरकारी ऐप नहीं है। यह केवल सार्वजनिक सरकारी स्रोतों से उपलब्ध डेटा को नागरिकों की सुविधा के लिए प्रस्तुत करता है। उपयोगकर्ताओं को आवश्यकतानुसार डेटा की पुष्टि आधिकारिक वेबसाइट से करनी चाहिए।
+ 
+आधिकारिक डेटा स्रोत:
+• https://mpbhulekhrecords.com

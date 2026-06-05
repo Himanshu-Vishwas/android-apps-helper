@@ -1,0 +1,20 @@
+short: Gujarat Land Records, RoR, Mutation and Land Maps Info
+
+long: 
+Gujarat - Land Info is your one-stop solution for accessing land records in Gujarat. This app helps you view Records of Rights (RoR), check mutation status, explore land maps, and access useful calculators and guidelines to simplify land-related tasks.
+ 
+Our mission is to make Gujarat's land record system more transparent, efficient, and citizen-friendly by providing easy digital access to official resources.
+ 
+Features:
+• View detailed land records and Records of Rights (RoR)
+• Check mutation status of plots
+• Explore land maps
+• Access land area and registration calculators
+• Offline support for key information
+• User-friendly interface with clear navigation
+ 
+Disclaimer:
+This app is not an official government app. It only provides information available from public government sources to make access easier for citizens. Users are advised to verify data from official sources when required.
+ 
+Official Data Sources:
+• https://anyror.gujarat.gov.in
