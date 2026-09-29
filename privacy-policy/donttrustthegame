@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Don't Trust the Game</title>
+    <meta name="description" content="Privacy Policy for Don't Trust the Game by Marsman.">
+    <style>
+        :root {
+            --background: #f6f7fb;
+            --surface: #ffffff;
+            --text: #171923;
+            --muted: #626878;
+            --primary: #ff3b30;
+            --border: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .container {
+            width: min(900px, calc(100% - 32px));
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #151827, #292d44);
+            color: white;
+            padding: 64px 0 56px;
+        }
+
+        header h1 {
+            margin: 0 0 12px;
+            font-size: clamp(32px, 6vw, 48px);
+            line-height: 1.1;
+        }
+
+        header p {
+            margin: 0;
+            color: #d7d9e2;
+            font-size: 17px;
+        }
+
+        main {
+            padding: 40px 0 70px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 32px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 28px;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .highlight {
+            background: #fff5f4;
+            border-left: 4px solid var(--primary);
+            padding: 16px 18px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 28px 0;
+            color: var(--muted);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 22px;
+            }
+
+            header {
+                padding: 48px 0 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>Don't Trust the Game</p>
+        <p class="updated">Effective date: September 29, 2026</p>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+        <section class="card">
+            <h2>1. Introduction</h2>
+
+            <p>
+                This Privacy Policy explains how information may be collected, used,
+                and shared when you use <strong>Don't Trust the Game</strong>
+                (the "Game"), developed and published by <strong>Marsman</strong>.
+            </p>
+
+            <p>
+                We respect your privacy and aim to collect only information that is
+                reasonably necessary to operate, improve, secure, and monetize the Game.
+            </p>
+
+            <div class="highlight">
+                <strong>Important:</strong> Don't Trust the Game does not require you
+                to create an account or provide your name, phone number, postal address,
+                or other directly identifying information in order to play the core game.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>2. Information We May Collect</h2>
+
+            <p>
+                Depending on how you use the Game and which services are enabled,
+                certain information may be processed automatically.
+            </p>
+
+            <h3>2.1 Device and Technical Information</h3>
+
+            <p>
+                The Game or third-party services used by the Game may process
+                technical information such as:
+            </p>
+
+            <ul>
+                <li>Device type and model</li>
+                <li>Operating system and version</li>
+                <li>App version</li>
+                <li>Language and general device settings</li>
+                <li>IP address or approximate location derived from an IP address</li>
+                <li>Advertising identifiers where permitted by the device and applicable settings</li>
+                <li>Network and connectivity information</li>
+                <li>Crash and diagnostic information</li>
+                <li>Information required to detect technical problems and improve performance</li>
+            </ul>
+
+            <h3>2.2 Gameplay Information</h3>
+
+            <p>
+                The Game may store gameplay-related information such as:
+            </p>
+
+            <ul>
+                <li>Completed levels</li>
+                <li>Best scores and times</li>
+                <li>Achievements</li>
+                <li>Collected in-game items</li>
+                <li>Unlocked characters or cosmetic items</li>
+                <li>Game settings and preferences</li>
+                <li>Daily challenge progress</li>
+                <li>Gameplay statistics</li>
+            </ul>
+
+            <p>
+                Some of this information may be stored locally on your device.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>3. Advertising</h2>
+
+            <p>
+                Don't Trust the Game may display advertisements using
+                <strong>Google AdMob</strong>, a service provided by Google.
+            </p>
+
+            <p>
+                The Game may use:
+            </p>
+
+            <ul>
+                <li>Banner advertisements</li>
+                <li>Interstitial advertisements</li>
+                <li>Rewarded advertisements</li>
+            </ul>
+
+            <p>
+                AdMob may collect and process certain information, including device
+                information, advertising identifiers, IP address, approximate location,
+                and interaction information, in accordance with Google's applicable
+                policies and your device or consent settings.
+            </p>
+
+            <p>
+                Advertising may be personalized or non-personalized depending on
+                applicable laws, consent choices, device settings, and Google's
+                advertising systems.
+            </p>
+
+            <p>
+                For more information about how Google uses information in advertising,
+                please review Google's privacy documentation:
+            </p>
+
+            <p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                    Google Privacy Policy
+                </a>
+            </p>
+
+            <p>
+                You can also review Google's information about advertising and
+                personalization through Google's advertising settings.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>4. Rewarded Advertisements</h2>
+
+            <p>
+                The Game may offer optional rewarded advertisements. For example,
+                you may voluntarily watch an advertisement in exchange for an
+                in-game benefit such as a revive, hint, additional attempt, or
+                other reward.
+            </p>
+
+            <p>
+                Watching a rewarded advertisement is optional. You are not required
+                to watch an advertisement to use the core functionality of the Game.
+            </p>
+
+            <p>
+                Rewards are granted only when the advertising service confirms that
+                the required advertisement interaction has been completed.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>5. Analytics and Diagnostics</h2>
+
+            <p>
+                We may use analytics or diagnostic services to understand how the Game
+                is used and to identify crashes, bugs, performance problems, and
+                gameplay issues.
+            </p>
+
+            <p>
+                Depending on the services enabled in a particular version of the Game,
+                information may include:
+            </p>
+
+            <ul>
+                <li>App launches</li>
+                <li>Level starts and completions</li>
+                <li>Level failures and restarts</li>
+                <li>Gameplay events</li>
+                <li>Ad events</li>
+                <li>Performance information</li>
+                <li>Crash information</li>
+            </ul>
+
+            <p>
+                Analytics information is used to improve the Game, identify technical
+                problems, balance gameplay, and understand general usage patterns.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>6. How We Use Information</h2>
+
+            <p>
+                Information may be used for the following purposes:
+            </p>
+
+            <ul>
+                <li>To provide and operate the Game</li>
+                <li>To save gameplay progress</li>
+                <li>To provide requested rewards and features</li>
+                <li>To display advertisements</li>
+                <li>To measure advertising performance</li>
+                <li>To analyze gameplay and improve the Game</li>
+                <li>To identify and fix crashes and technical problems</li>
+                <li>To prevent abuse, fraud, and misuse</li>
+                <li>To maintain security and reliability</li>
+                <li>To comply with applicable legal obligations</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>7. Third-Party Services</h2>
+
+            <p>
+                The Game may use third-party services to provide advertising,
+                analytics, diagnostics, infrastructure, or other functionality.
+            </p>
+
+            <p>
+                These third-party providers may process information according to
+                their own privacy policies.
+            </p>
+
+            <p>
+                Services used by the Game may change over time as the Game is
+                updated.
+            </p>
+
+            <h3>Google AdMob</h3>
+
+            <p>
+                Advertising and related services may be provided by Google AdMob.
+            </p>
+
+            <p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                    Google Privacy Policy
+                </a>
+            </p>
+
+            <p>
+                <a href="https://support.google.com/admob/" target="_blank" rel="noopener noreferrer">
+                    Google AdMob Help
+                </a>
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>8. Data Retention</h2>
+
+            <p>
+                Gameplay information stored locally on your device generally remains
+                available until you delete the Game data, uninstall the Game, or the
+                relevant information is otherwise removed.
+            </p>
+
+            <p>
+                Information processed by third-party services is retained according
+                to the applicable third party's policies and retention practices.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>9. Data Security</h2>
+
+            <p>
+                We take reasonable measures to protect information associated with
+                the Game. However, no electronic storage or transmission method can
+                be guaranteed to be completely secure.
+            </p>
+
+            <p>
+                We do not guarantee absolute security of information processed through
+                the Game or third-party services.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>10. Children's Privacy</h2>
+
+            <p>
+                Don't Trust the Game is not intended to knowingly collect personal
+                information directly from children.
+            </p>
+
+            <p>
+                The Game does not require users to provide their name, phone number,
+                postal address, or similar directly identifying information to play.
+            </p>
+
+            <p>
+                Advertising and third-party services may have their own requirements
+                regarding children's privacy and age-related advertising. Their
+                applicable policies and consent mechanisms may apply.
+            </p>
+
+            <p>
+                If you believe that a child has provided personal information to us
+                in connection with the Game, please contact us so that we can review
+                the situation.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>11. Your Choices</h2>
+
+            <p>
+                Depending on your device, location, applicable law, and available
+                settings, you may have choices regarding:
+            </p>
+
+            <ul>
+                <li>Personalized advertising</li>
+                <li>Advertising identifiers</li>
+                <li>Analytics and diagnostic information</li>
+                <li>Device privacy settings</li>
+                <li>Consent for certain data processing activities</li>
+            </ul>
+
+            <p>
+                You can also control certain advertising and privacy settings through
+                your Android device settings and Google's available privacy controls.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>12. Data Deletion Requests</h2>
+
+            <p>
+                If you have a question about information associated with the Game or
+                believe that information relating to you needs to be deleted, you may
+                contact us using the email address below.
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:himanshuvishwas58@gmail.com">
+                    himanshuvishwas58@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Please provide enough information for us to understand your request.
+                We may need to verify the request before taking action where required
+                by applicable law.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>13. International Processing</h2>
+
+            <p>
+                Third-party service providers used by the Game may process information
+                on servers located in countries other than your country of residence.
+            </p>
+
+            <p>
+                Where required, applicable service providers use appropriate
+                safeguards for international data transfers.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>14. Changes to This Privacy Policy</h2>
+
+            <p>
+                We may update this Privacy Policy from time to time to reflect changes
+                to the Game, third-party services, legal requirements, or our practices.
+            </p>
+
+            <p>
+                When changes are made, the updated version will be published on this
+                page and the effective date will be updated.
+            </p>
+
+            <p>
+                We encourage you to review this Privacy Policy periodically.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>15. Contact Us</h2>
+
+            <p>
+                If you have questions, concerns, or requests regarding this Privacy
+                Policy or Don't Trust the Game, contact us:
+            </p>
+
+            <p>
+                <strong>Developer:</strong> Marsman
+            </p>
+
+            <p>
+                <strong>Game:</strong> Don't Trust the Game
+            </p>
+
+            <p>
+                <strong>Package:</strong> mm.marsman.donttrustthegame
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:himanshuvishwas58@gmail.com">
+                    himanshuvishwas58@gmail.com
+                </a>
+            </p>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        © 2026 Marsman. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
